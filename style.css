@@ -1,5 +1,5 @@
 :root {
-    --site-bg: url('images/bg2.png');
+    --site-bg: url('');
     --main-bg: url('images/nothing.png');
     --gradient-bg: linear-gradient(0deg, #0000 0%, #1c246288 33%, #18084388 90%);
     --accent-color: rgb(251, 249, 251);
@@ -26,13 +26,6 @@
 
 html {scroll-behavior: smooth;}
 
-/* Animation pour la pluie d'étoiles */
-@keyframes fall {
-    to {
-        transform: translateY(100vh);
-        opacity: 0;
-    }
-}
 
 body {
     margin: 0;
@@ -50,14 +43,12 @@ p {line-height: 1.5em;}
 }
 
 #top-title{
-
-    
     display: block;
 
     margin: auto;
     max-width: 960px;
 
-    background: url(images/title-2.png);
+    background: url(images/title.png);
     background-repeat: no-repeat;
     background-position: center;
 
@@ -205,37 +196,13 @@ footer {
     padding: 1em;
 }
 
-/* these are the mobile styles! */
+/* these are the mobile styles */
 @media only screen and (max-width: 800px) {
     #content {
-        flex-wrap: wrap;
+        display: list-item;
     }
-    #sidebar {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        padding-top: 2em;
+    nav ul {
+        display: none;
     }
-    #avatar {margin: 0 1em;}
-    #bio {width: 50%;}
-    #sidebar ul {   
-        margin: 0 1em;
-        display: flex;
-        flex-wrap: wrap;
-        line-height: 2em;
-        padding-left: 0;
-    }
-    #sidebar li {
-        margin: .3em 1em;
-    }
-    main {
-/* remove scrollbar for mobile */
-        max-height: fit-content;
-    }
-    .img-right {
-        float: none;
-        text-align: center;
-    }
+
 }
