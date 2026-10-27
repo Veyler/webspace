@@ -105,7 +105,7 @@ ul { list-style-type:  "✦"; }
 .sidebar {
     background-image: var(--main-bg);
     border: 1px solid var(--favorite-color);
-    min-width: 220px;
+    overflow: hidden;
     margin-bottom: 5px;
     padding: 5px;
 }
@@ -203,6 +203,9 @@ footer {
     }
     nav ul {
         display: none;
+    }
+    #sidebar {
+        margin: 0 auto;
     }
 
 }
